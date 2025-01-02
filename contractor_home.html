@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <title>YourContractor.com</title>
+      <link rel="stylesheet" href="contractor_home.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Kanit:wght@300;500;700&family=Lato:ital,wght@0,100;0,300;1,700&display=swap" rel="stylesheet">
+       
+    </head>
+
+    <body>
+       <!-- Navigation bar -->
+      <nav>
+        <div id = "my-burger-links" class="burger-links">
+          <a href="javascript:void(0)" class="closebtn" style="text-align: right;" onclick="closeNav()">×</a>
+          <div class="nav-header">
+            <a href="user_home.html" style="font-size: 20px;">Profile <i class="fa fa-user"></i></a>
+            <a href="#" style="font-size: 20px;">Settings <i class="fa fa-cog"></i></a>
+          </div>
+          <a href="#">Home</a>
+          <a href="#">Feed</a>
+          <button class="browse-dropdown-btn">Browse <i class="fa fa-caret-down"></i></button>
+          <div class="browse-container">
+            <a hred="#" style="font-size: 20px;">By Region</a>
+            <button class="servicesbtn" style="font-size: 20px;">By Services <i class="fa fa-caret-down"></i></button>
+            <div class="services-container">
+              <a hred="#" style="font-size: 20px;">Bed & Bath</a>
+              <a hred="#" style="font-size: 20px;">Plumbing</a>
+              <a hred="#" style="font-size: 20px;">Electrical</a>
+              <a hred="#" style="font-size: 20px;">Basement Finishing</a>
+              <a hred="#" style="font-size: 20px;">Interior Painting</a>
+              <a hred="#" style="font-size: 20px;">Graden & Yard</a>
+              <a hred="#" style="font-size: 20px;">Kitchen Remodeling</a>
+              <a hred="#" style="font-size: 20px;">Carpentry Works</a>
+              <a hred="#" style="font-size: 20px;">General Contracting</a>
+              <a hred="#" style="font-size: 20px;">Gas Lines</a>
+              <a hred="#" style="font-size: 20px;">Appliance Repairs</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="toggleNav()"><p id="burgerText" style="margin: 0;">☰</p></button>
+        </div>
+
+        <div class="website-icon">
+          <button>Contractor Pro</button>
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-location-bars">
+          <input type="search" placeholder="Basement Renovations" style="width: 300px;">
+    
+          <!-- Location bar -->
+          <input type="search" placeholder="Winnipeg, MB" style="width: 300px;">
+          <button><i class="fa fa-map-marker" style="font-size: 25px;"></i></button>
+        </div>
+
+        <!-- My Account Button -->
+        <div class="login-signup">
+          <button class = "my-account" onclick="goToUserHomePage()"><i class="fa fa-user"></i> My Account</button>
+        </div>
+
+      </nav>
+
+
+        <!-- MAIN PAGE STARTS HERE -->
+        <div class="mainpage">
+          <div class="contractor-intro">
+            <div class="contractor-info">
+              <h1>Innovate Renovations</h1>
+              <p style="font-size: 15px;">Here at Innocate Renovations we provide you with a family first aspect. 
+                We have three generations of family members here at Innovate Renovations. 
+                We are 100% family owned and operated with over 30 years of experience under our tool belts.
+                We have been proudly serving Winnipeg and the surrounding areas for over three decades.</p>
+              <h2 style="color: brown;">214 Prince Avenue, Winnipeg, MB, R2T5G7</h2>  
+              <h3>Services Provided</h3>
+              <div class="services-provided">
+                <button disabled>Interior Painting</button>
+                <button disabled>Kitchen Remodeling</button>
+                <button disabled>Carpentry Works</button>
+                <button disabled>Flooring</button>
+                <button disabled>Basement Furnishing</button>
+              </div>
+              <div class="important-btns">
+                <button>Schedule</button>
+                <button>Contact</button>
+                <button>Get a Quote</button>
+                <button onclick="scrollWriteReviewSection()"> Write a Review </button>
+              </div>
+            </div>
+
+            <div class="contractor-images">
+              <img src="images/innovate_reno.jpeg">
+              <div class="rating">
+                <p>Rating: <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="customer-reviews">
+            <div class="review-heading">
+              <h2 style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px;">5 Customer Reviews</h2>
+            </div>
+            
+            <div class="comments">
+              <div class="box">
+                <h2>Jeff Winsten</h2>
+                <p class="summary">Fast Efficient Helpful <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i></p>
+                <p class="descriptive-summary">I recently hired Innovative Renovations for a home renovation, and I'm thrilled with their work. 
+                  They demonstrated exceptional speed and efficiency, completing the project well ahead of schedule without sacrificing quality. 
+                  Innovative Renovations was not only fast but also incredibly helpful throughout the process. 
+                  They took the time to understand my vision, provided valuable insights, and addressed any questions promptly. 
+                  Their professionalism and transparent communication made the entire experience stress-free. 
+                  I highly recommend Innovative Renovations for anyone seeking a contractor who delivers top-notch results with speed and efficiency. 
+                  I am impressed with their dedication to customer satisfaction and will undoubtedly choose them for future projects.</p>
+                <div class="image-reviews">
+                  <img src="images/basement1.jpeg">
+                  <img src="images/basement2.jpeg">
+                  <img src="images/basement3.jpeg">
+                </div>
+              </div>
+
+              <div class="box">
+                <h2>Andre Braugher</h2>
+                <p class="summary">A little condescending <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i></p>
+                <p class="descriptive-summary">While I engaged with Innovative Renovations for a recent project, their pace left much to be desired. 
+                  Their idea of efficiency seemed more focused on haste than precision, resulting in a subpar outcome. 
+                  Despite their attempts at being helpful, their understanding of the project vision left me questioning their expertise.
+                   Perhaps a more considered approach would benefit both their work and customer satisfaction. 
+                   Overall, I would cautiously recommend Innovative Renovations to those with a surplus of patience and a penchant for rework..</p>
+              </div>
+
+              <h2>Paul Liberschtein</h2>
+              <p class="summary">Very polite and on time <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i></p>
+              <p class="descriptive-summary">I had the pleasure of working with Innovative Renovations for a recent home project, 
+                and I am genuinely delighted with the outcome. 
+                The team at Innovative Renovations displayed an admirable combination of politeness and punctuality throughout the entire process. 
+                They not only completed the renovation ahead of schedule but also maintained a high standard of quality in their work.
+                Innovative Renovations stood out for their impeccable professionalism. 
+                Their polite and respectful demeanor made the collaboration a positive experience. 
+                They took the time to listen to my ideas, offered valuable suggestions, and ensured that every concern was promptly addressed.
+                Moreover, the punctuality displayed by Innovative Renovations was remarkable. Deadlines were not only met but exceeded, 
+                showcasing a commitment to delivering exceptional results in a timely manner. 
+                Their dedication to both politeness and punctuality has left a lasting impression, and 
+                I wholeheartedly recommend Innovative Renovations to anyone seeking a courteous and efficient contractor. 
+                I am grateful for their outstanding service and look forward to future collaborations.</p>
+              <div class="image-reviews">
+                <img src="images/living1.jpeg">
+                <img src="images/living2.png">
+                <img src="images/living3.jpeg">
+              </div>
+            </div>
+          </div>
+
+          <div class="write-review" id="write-review-section">
+            <div class="write-review-heading">
+              <h2 style="font-weight: lighter; padding-left: 15px; padding-top: 8px; padding-bottom: 8px;">Write a Review</h2>
+          </div>
+          <form class="review" id ="review">
+            <textarea placeholder="Enter your name"></textarea>
+            <textarea placeholder="Enter your email"></textarea>
+            <textarea class="message" placeholder="Enter your message here"></textarea>
+            <button class="submit-button" onclick="openSubmitConf()">Submit</button>
+
+            <div class="overlay" id="overlay"></div>
+            <div class="submit-confirmation" id="submit-confirmation">
+              <img src="images/bluetick.png">
+              <h2>Thank You!</h2>
+              <h3>Your Review has been submitted successfully</h2>
+              <button onclick="closeSubmitConf()">OK</button>
+            </div>
+          </form>
+            
+        </div>
+      <script src="script.js"></script>
+  
+    </body>
+
+</html>
